@@ -1,0 +1,1959 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic);
+/**
+ * mein3d
+ */
+
+/*clearfix hack*/
+.cf:before,
+.cf:after {content: " "; /* 1 */display: table; /* 2 */}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+/*jsf overrides*/
+ .ui-selectonemenu .ui-selectonemenu-label {
+  padding-top: 7px;
+  line-height: 19.2000007629395px;
+}
+.ui-inputfield, .ui-widget-content .ui-inputfield, .ui-widget-header .ui-inputfield {
+  background: transparent;
+  -moz-box-shadow: inset 0 2px 2px transparent;
+  -webkit-box-shadow: inset 0 2px 2px transparent;
+  box-shadow: inset 0 2px 2px transparent;
+  color: #7bc1a0;
+  position: relative;
+  z-index: 9999;
+}
+.ui-inputfield:hover,
+.ui-inputfield:focus,
+.ui-inputfield:active{
+  color: #000;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 1px solid transparent;
+  background: transparent;
+  font-weight: normal;
+  color: #555555;
+}
+.ui-state-default .ui-icon {
+  background-image: none;
+  position: relative;
+  right: 8px;
+  top: 7px;
+}
+.ui-selectonemenu-panel .ui-selectonemenu-items-wrapper {
+  position: relative;
+  right: 2px;
+  }
+  .ui-helper-hidden{
+  z-index: 9999999 !important;
+  background: white !important;
+}
+.ui-panel .ui-panel-content {
+  border: 0;
+  background: none;
+  padding: 0;
+}
+.ui-state-focus{
+  box-shadow: none !important;
+}
+
+.button--green .ui-button-text {
+  padding: .3em 1em;
+  position: absolute;
+  top: 9px;
+  width: 100%;
+}
+
+.ui-datatable thead th, .ui-datatable tbody td, .ui-datatable tfoot td {
+  padding: 4px 10px;
+  text-align: center;
+}
+.ui-datatable thead th{
+  height: 30px;
+}
+.ui-datatable thead th, .ui-datatable tbody td, .ui-datatable tfoot td {
+  vertical-align: middle;
+}
+td h3{
+  font-weight: 400;
+  font-size: 0.9166666667em;
+}
+.ui-dialog{
+  z-index: 9999999999 !important;
+  background: #ffffff !important;
+}
+
+.address-form tr{
+  border: 1px solid transparent;
+}
+.address-form tr td:first-child{
+  text-align: right;
+  vertical-align: middle;
+    font-size: 1.125em;
+  font-weight: bold;
+  color: #2e3136;
+  line-height: 36px;
+}
+.address-form tr td:last-child{
+padding: 0;
+position: relative;
+}
+.ui-panel {
+  padding: 0;
+}
+.ui-chkbox-box .ui-icon {
+  background-image: url("/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-smoothness");
+  position: relative;
+  right: 1px;
+  top: -1px;
+}
+
+.ui-chkbox .ui-chkbox-box {
+  border: 1px solid #d3d3d3;
+  background: #e6e6e6 url("/javax.faces.resource/images/ui-bg_glass_75_e6e6e6_1x400.png.jsf?ln=primefaces-smoothness") 50% 50% repeat-x;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin: 0px 5px 0px 0px;
+    position: relative;
+  top: 2px;
+}
+.ui-widget-content {
+  background: transparent;
+  color: #222222;
+}
+.ui-widget-content .ui-panelgrid-cell .m-input--green{
+  padding: 0 10px !important;
+  font-size: 14px !important;
+}
+.ui-radiobutton-box {
+  border: 1px solid #aaaaaa;
+  background: #ffffff url("/javax.faces.resource/images/ui-bg_glass_65_ffffff_1x400.png.jsf?ln=primefaces-smoothness") 50% 50% repeat-x;
+  font-weight: normal;
+  color: #212121;
+  position: relative;
+  top: -2px;
+}
+.ui-radiobutton-box .ui-icon {
+  background-image: url("/javax.faces.resource/images/ui-icons_454545_256x240.png.jsf?ln=primefaces-smoothness");
+  position: relative;
+  right: 2px;
+  top: -2px;
+}
+.ui-radiobutton .ui-radiobutton-box {
+  width: 15px;
+  height: 15px;
+  line-height: 16px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.radio-block .ui-message-error{
+  margin: 0;
+}
+.check_text a{
+  color: #7bc1a0;
+}
+.page{
+  position: relative;
+}
+.page__footer{
+  width: 100%;
+}
+b{
+  font-weight: 800 !important;
+}
+.text-center{
+  text-align: center !important;
+}
+.checkout-circle{
+    height: 1.8em;
+  width: 1.8em;
+  background: #7bc1a0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 3em;
+  margin: 0 auto;
+}
+.checkout-circle i{
+  font-size: 1.2em; 
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.creditcard-form a{
+  color: #7bc1a0;
+  margin-left: 1%;
+  margin-right: 2%;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* line 4, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 11, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* line 6, /Users/karlis/mein3d/scss/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, /Users/karlis/mein3d/scss/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 19, /Users/karlis/mein3d/scss/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 22, /Users/karlis/mein3d/scss/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 25, /Users/karlis/mein3d/scss/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 29, /Users/karlis/mein3d/scss/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+/* line 34, /Users/karlis/mein3d/scss/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 38, /Users/karlis/mein3d/scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 3, /Users/karlis/mein3d/scss/_typography.scss */
+body,
+.ui-widget {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px; }
+
+/* line 8, /Users/karlis/mein3d/scss/_typography.scss */
+strong {
+  font-weight: 900; }
+
+/* line 12, /Users/karlis/mein3d/scss/_typography.scss */
+.info .main__title,
+.page--configurator .main__title {
+  margin-top: 1.8em;
+  margin-bottom: .6em;
+  font-size: 2em;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+/* line 20, /Users/karlis/mein3d/scss/_typography.scss */
+.page--checkout .main__title {
+  margin-top: 0.625em;
+  margin-bottom: 0.625em;
+  font-size: 1.5em;
+  font-weight: 900; }
+
+/* line 28, /Users/karlis/mein3d/scss/_typography.scss */
+.page--configurator .latest-prints__title {
+  margin-top: 1.6em;
+  margin-bottom: .4em;
+  font-size: 2em;
+  font-weight: 900; }
+
+/* line 36, /Users/karlis/mein3d/scss/_typography.scss */
+.opt-menu__title {
+  margin-bottom: .5em;
+  font-size: 1.625em;
+  font-weight: 900;
+  color: #272727; }
+
+/* line 44, /Users/karlis/mein3d/scss/_typography.scss */
+.m-accordion__head {
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #272727; }
+
+/* line 51, /Users/karlis/mein3d/scss/_typography.scss */
+.m-accordion__panel h4 {
+  margin-bottom: 1em;
+  font-size: 0.875em;
+  font-weight: 900;
+  color: #272727; }
+.edit{
+  margin-bottom: 5px;
+  color: #7bc1a0;
+  display: inline-block;
+  text-transform: lowercase;
+}
+
+
+/* line 2, /Users/karlis/mein3d/src/partials/steps/_steps.scss */
+.content-ribbon > div {
+  float: left;
+  display: block;
+  margin-right: 3.5786636068%;
+  width: 22.3160022949%; }
+  /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .content-ribbon > div:last-child {
+    margin-right: 0; }
+  /* line 4, /Users/karlis/mein3d/src/partials/steps/_steps.scss */
+  .content-ribbon > div > div {
+    display: inline-block; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/header/_header.scss */
+.m-header {
+  height: 60px;
+  padding-top: 28px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  /* line 6, /Users/karlis/mein3d/src/partials/header/_header.scss */
+  .m-header__logo {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 6.1721527019%;
+    height: 100%; }
+    /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .m-header__logo:last-child {
+      margin-right: 0; }
+    /* line 9, /Users/karlis/mein3d/src/partials/header/_header.scss */
+    .m-header__logo img {
+      position: relative;
+      top: -8px;
+      width: 94px; }
+  /* line 15, /Users/karlis/mein3d/src/partials/header/_header.scss */
+  .m-header__nav {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+    margin-left: 8.5298042998%; }
+    /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .m-header__nav:last-child {
+      margin-right: 0; }
+  /* line 19, /Users/karlis/mein3d/src/partials/header/_header.scss */
+  .m-header__user {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 31.7615656014%; }
+    /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .m-header__user:last-child {
+      margin-right: 0; }
+
+/* line 27, /Users/karlis/mein3d/src/partials/header/_header.scss */
+.navigation__item {
+  float: left; }
+  /* line 32, /Users/karlis/mein3d/src/partials/header/_header.scss */
+  .navigation__item:nth-child(1) .navigation__link:before {
+    content: "01"; }
+  /* line 37, /Users/karlis/mein3d/src/partials/header/_header.scss */
+  .navigation__item:nth-child(2) .navigation__link:before {
+    content: "02"; }
+  /* line 42, /Users/karlis/mein3d/src/partials/header/_header.scss */
+  .navigation__item:nth-child(3) .navigation__link:before {
+    content: "03"; }
+  /* line 47, /Users/karlis/mein3d/src/partials/header/_header.scss */
+  .navigation__item:nth-child(4) .navigation__link:before {
+    content: "04"; }
+  /* line 52, /Users/karlis/mein3d/src/partials/header/_header.scss */
+  .navigation__item:nth-child(5) .navigation__link:before {
+    content: "05"; }
+  /* line 56, /Users/karlis/mein3d/src/partials/header/_header.scss */
+  .navigation__item + .navigation__item {
+    margin-left: 2.5em; }
+/* line 60, /Users/karlis/mein3d/src/partials/header/_header.scss */
+.navigation__link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  color: #272727; }
+  /* line 69, /Users/karlis/mein3d/src/partials/header/_header.scss */
+  .navigation__link:before {
+    position: absolute;
+    left: -1.3em;
+    bottom: 0;
+    display: block;
+    font-size: 1.75em;
+    font-weight: bold; }
+
+/* line 82, /Users/karlis/mein3d/src/partials/header/_header.scss */
+.user__info {
+  float: left; }
+  /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .user__info::after {
+    clear: both;
+    content: "";
+    display: table; }
+/* line 87, /Users/karlis/mein3d/src/partials/header/_header.scss */
+.user__avatar {
+  float: left;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  margin-right: 1em;
+  top: -.7em; }
+/* line 96, /Users/karlis/mein3d/src/partials/header/_header.scss */
+.user__intro-text, .user__name {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  float: left; }
+/* line 101, /Users/karlis/mein3d/src/partials/header/_header.scss */
+.user__intro-text {
+  font-style: italic;
+  font-weight: bold; }
+/* line 105, /Users/karlis/mein3d/src/partials/header/_header.scss */
+.user__name {
+  margin-left: .5em; }
+/* line 109, /Users/karlis/mein3d/src/partials/header/_header.scss */
+.user__logout, .user__cart {
+  position: relative;
+  float: left;
+  margin-left: 1.3em;
+  padding-left: 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.75em;
+  color: #272727; }
+  /* line 119, /Users/karlis/mein3d/src/partials/header/_header.scss */
+  .user__logout:before, .user__cart:before {
+    position: absolute;
+    left: -0.2em;
+    bottom: -0.2em;
+    font-family: FontAwesome;
+    font-size: 1.4em; }
+/* line 129, /Users/karlis/mein3d/src/partials/header/_header.scss */
+.user__logout:before {
+  content: "\f007"; }
+/* line 134, /Users/karlis/mein3d/src/partials/header/_header.scss */
+.user__cart:before {
+  content: "\f07a"; }
+/* line 138, /Users/karlis/mein3d/src/partials/header/_header.scss */
+.user__cart-items {
+  position: absolute;
+  left: 1em;
+  bottom: 1em;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #7bc1a0;
+  line-height: 12px;
+  font-size: 0.6666666667em;
+  text-align: center;
+  color: white; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/footer/_footer.scss */
+.fa-lg {
+  font-size: 2em; }
+
+/* line 6, /Users/karlis/mein3d/src/partials/footer/_footer.scss */
+.m-footer {
+  clear: left; }
+  /* line 8, /Users/karlis/mein3d/src/partials/footer/_footer.scss */
+  .m-footer__top {
+    height: 120px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+  /* line 13, /Users/karlis/mein3d/src/partials/footer/_footer.scss */
+  .m-footer__content {
+    height: 240px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2); }
+  /* line 17, /Users/karlis/mein3d/src/partials/footer/_footer.scss */
+  .m-footer__block {
+    float: left;
+    display: block;
+    margin-right: 5.8515051827%;
+    width: 15.3187958539%; }
+    /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .m-footer__block:last-child {
+      margin-right: 0; }
+  /* line 21, /Users/karlis/mein3d/src/partials/footer/_footer.scss */
+  .m-footer__bottom {
+    height: 75px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2); }
+  /* line 25, /Users/karlis/mein3d/src/partials/footer/_footer.scss */
+  .m-footer__copyrights {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 0.8125em;
+line-height: 25px;
+  padding-top: 25px; }
+
+/* line 35, /Users/karlis/mein3d/src/partials/footer/_footer.scss */
+.f-block {
+  text-align: center;
+  margin-top: 3.5em; }
+  /* line 39, /Users/karlis/mein3d/src/partials/footer/_footer.scss */
+  .f-block__title {
+    margin-bottom: 1.5em;
+    font-size: 0.9375em;
+    font-weight: bold;
+    text-transform: uppercase; }
+  /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .f-block__block--social::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 50, /Users/karlis/mein3d/src/partials/footer/_footer.scss */
+  .f-block__block--social .f-block__item {
+    float: left;
+    display: block;
+    margin-right: 16.0363113405%;
+    width: 41.9818443298%; }
+    /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .f-block__block--social .f-block__item:last-child {
+      margin-right: 0; }
+    /* line 78, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_omega.scss */
+    .f-block__block--social .f-block__item:nth-child(2n) {
+      margin-right: 0; }
+    /* line 83, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_omega.scss */
+    .f-block__block--social .f-block__item:nth-child(2n+1) {
+      clear: left; }
+    /* line 53, /Users/karlis/mein3d/src/partials/footer/_footer.scss */
+    .f-block__block--social .f-block__item .f-block__link {
+      color: #727272; }
+    /* line 57, /Users/karlis/mein3d/src/partials/footer/_footer.scss */
+    .f-block__block--social .f-block__item:nth-child(1) .f-block__link, .f-block__block--social .f-block__item:nth-child(3) .f-block__link {
+      float: right; }
+    /* line 62, /Users/karlis/mein3d/src/partials/footer/_footer.scss */
+    .f-block__block--social .f-block__item:nth-child(2) .f-block__link, .f-block__block--social .f-block__item:nth-child(4) .f-block__link {
+      float: left; }
+  /* line 72, /Users/karlis/mein3d/src/partials/footer/_footer.scss */
+  .f-block__link {
+    text-decoration: none;
+    line-height: 2em;
+    font-size: 0.6875em;
+    color: #272727; }
+
+/* line 2, /Users/karlis/mein3d/src/partials/button/_button.scss */
+.button-container--left {
+  text-align: left; }
+/* line 5, /Users/karlis/mein3d/src/partials/button/_button.scss */
+.button-container--right {
+  text-align: right; }
+
+/* line 10, /Users/karlis/mein3d/src/partials/button/_button.scss */
+.button {
+  display: inline-block;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  color: white; }
+  .button--green:after{
+   content: "";
+  width: 100%;
+  height: 45px;
+  display: block;
+  padding-top: 35px;
+  background-image: url("../images/buttons/shadow.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  }
+  
+  /* line 20, /Users/karlis/mein3d/src/partials/button/_button.scss */
+  .button--purple {
+    background-image: url("../images/buttons/purple.png"); }
+  /* line 23, /Users/karlis/mein3d/src/partials/button/_button.scss */
+  .button--green {
+    background-image: url("../images/buttons/green.png");
+}
+.button--green:hover {
+    background-position: 0 -72px;
+}
+.button--green:active {
+    background-position: 0 -141px;
+}
+
+  .newbutton {
+    background-image: url("../images/green1.png");
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden; 
+    outline: none;}
+ .newbutton:hover {
+    background-image: url("../images/green2.png"); }
+ .newbutton:active {
+    background-image: url("../images/green3.png"); }
+
+
+body:after
+{
+content: url("../images/green1.png") url("../images/green2.png") url("../images/green3.png");
+display: none;
+}
+
+  /* line 26, /Users/karlis/mein3d/src/partials/button/_button.scss */
+  .button--secondary {
+    background-image: url("../images/buttons/secondary.png");
+    color: #7bc1a0; }
+  /* line 31, /Users/karlis/mein3d/src/partials/button/_button.scss */
+  .button--back:before {
+    content: "«";
+    display: inline-block;
+    margin-right: .3em; }
+  @media screen and (min-width: 17.5em)  {
+    .button {
+      width: 140px;
+      height: 42px;
+      padding-top: 15px;
+      font-size: 0.8125em; } 
+    .button--green {
+  background-image: url("../images/buttons/green-mobile.png");
+}
+.button--green:hover {
+  background-position: 0 -52px;
+}
+.button--green:active {
+  background-position: 0 -102px;
+}
+}
+  @media screen and (min-width: 40.0625em)  {
+    .button {
+      width: 195px;
+      height: 60px;
+      padding-top: 20px;
+      font-size: 1.25em; } 
+    .button--green {
+  background-image: url("../images/buttons/green.png");
+}
+.button--green:hover {
+  background-position: 0 -72px;
+}
+.button--green:active {
+  background-position: 0 -141px;
+}}
+
+@media screen and (min-width: 17.5em)  {
+  .btn-container {
+    display: block;
+    margin-top: 1em; 
+  } 
+  .btn--remove {
+    width: 83px;
+    height: 23px;
+    top: 0;
+  }
+  .ui-widget-content {
+  border: 1px solid transparent;
+  }}
+@media screen and (min-width: 40.0625em)  {
+  .btn--remove {
+    width: 79px;
+    height: 19px;
+    top: 8px;
+  }
+  .ui-widget-content {
+  border: 1px solid #aaaaaa;
+}
+  .btn-container {
+    margin-top: 0; } }
+
+/* line 61, /Users/karlis/mein3d/src/partials/button/_button.scss */
+.btn--remove {
+  box-sizing: border-box;
+  border: 1px solid #2e3136;
+  border-radius: 3px;
+  padding: .2em .5em;
+  font-size: 12px;
+  text-decoration: none;
+  color: #2e3136;
+  font-size: 12px !important;
+  position: relative;
+  text-transform: lowercase;
+  left: -3px;
+}
+  /* line 73, /Users/karlis/mein3d/src/partials/button/_button.scss */
+  .btn--remove:before {
+    content: "x";
+    position: relative;
+    top: .02em;
+    display: inline-block;
+    margin-right: .2em;
+    font-size: 1.2em;
+    color: #2e3136; }
+  /* line 84, /Users/karlis/mein3d/src/partials/button/_button.scss */
+  .btn--remove:hover {
+    border-color: #f95355;
+    color: #f95355; }
+    /* line 87, /Users/karlis/mein3d/src/partials/button/_button.scss */
+    .btn--remove:hover:before {
+      color: #f95355; }
+/* line 92, /Users/karlis/mein3d/src/partials/button/_button.scss */
+.btn--filled {
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 145px;
+  height: 37px;
+  padding: 0 8px;
+  border: 1px solid #7bc1a0;
+  border-radius: 8px;
+  margin-top: .4em;
+  background-color: #7bc1a0;
+  color: white;
+  font-size: 0.625em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 900;
+  text-align: center;
+  line-height: 39px; }
+/* line 112, /Users/karlis/mein3d/src/partials/button/_button.scss */
+.btn--purple {
+  background-color: #7b68ac !important; 
+  border: 1px solid  #7b68ac !important; 
+  color: white !important;
+  font-weight: bold !important;
+}
+/* line 116, /Users/karlis/mein3d/src/partials/button/_button.scss */
+.btn + .m-input, .btn + .m-select, .btn + .btn {
+  margin-left: 8px; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/as-seen/_as-seen.scss */
+.as-seen {
+  height: 100%; }
+  /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .as-seen::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 4, /Users/karlis/mein3d/src/partials/as-seen/_as-seen.scss */
+  .as-seen__title {
+    float: left;
+    display: block;
+    margin-right: 4.8291579146%;
+    width: 12.6423684045%;
+    margin-top: 2.5em;
+    font-size: 1.125em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #53af82; }
+    /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .as-seen__title:last-child {
+      margin-right: 0; }
+  /* line 14, /Users/karlis/mein3d/src/partials/as-seen/_as-seen.scss */
+  .as-seen__list {
+    float: left;
+    display: block;
+    margin-right: 4.8291579146%;
+    width: 82.5284736809%;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .as-seen__list:last-child {
+      margin-right: 0; }
+  /* line 25, /Users/karlis/mein3d/src/partials/as-seen/_as-seen.scss */
+  .as-seen__link {
+    display: block; }
+    /* line 27, /Users/karlis/mein3d/src/partials/as-seen/_as-seen.scss */
+    .as-seen__link img {
+      max-width: 100%; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/shout/_shout.scss */
+.shout {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+  margin-left: 25.5894128995%;
+  margin-top: 8.8em;
+  margin-bottom: 7.2em;
+  text-align: center; }
+  /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .shout::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .shout:last-child {
+    margin-right: 0; }
+  /* line 10, /Users/karlis/mein3d/src/partials/shout/_shout.scss */
+  .shout__title {
+    margin-bottom: .8em;
+    font-size: 2.5em;
+    text-transform: uppercase; }
+  /* line 16, /Users/karlis/mein3d/src/partials/shout/_shout.scss */
+  .shout__description {
+    margin-bottom: 1.9em;
+    font-size: 1.3125em; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/slider/_slider.scss */
+.m-slider {
+  position: relative;
+  height: 342px; }
+  /* line 5, /Users/karlis/mein3d/src/partials/slider/_slider.scss */
+  .m-slider:before, .m-slider:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-repeat: repeat-x;
+    background-image: url("../images/dots.png"); }
+  /* line 13, /Users/karlis/mein3d/src/partials/slider/_slider.scss */
+  .m-slider:before {
+    top: 0; }
+  /* line 16, /Users/karlis/mein3d/src/partials/slider/_slider.scss */
+  .m-slider:after {
+    bottom: 0; }
+  /* line 20, /Users/karlis/mein3d/src/partials/slider/_slider.scss */
+  .m-slider__left, .m-slider__right {
+    position: absolute;
+    top: 45%; }
+  /* line 24, /Users/karlis/mein3d/src/partials/slider/_slider.scss */
+  .m-slider__left {
+    left: 0; }
+  /* line 27, /Users/karlis/mein3d/src/partials/slider/_slider.scss */
+  .m-slider__right {
+    right: 0; }
+  /* line 30, /Users/karlis/mein3d/src/partials/slider/_slider.scss */
+  .m-slider__list {
+    height: 100%;
+    padding: 1em 7em; }
+    /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+    .m-slider__list::after {
+      clear: both;
+      content: "";
+      display: table; }
+  /* line 35, /Users/karlis/mein3d/src/partials/slider/_slider.scss */
+  .m-slider__item {
+    float: left;
+    display: block;
+    margin-right: 2.8425855704%;
+    width: 17.7259315437%; }
+    /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .m-slider__item:last-child {
+      margin-right: 0; }
+  /* line 38, /Users/karlis/mein3d/src/partials/slider/_slider.scss */
+  .m-slider__link {
+    display: block; }
+
+/* line 3, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+.xyz-view__image img {
+  max-width: 100%; }
+/* line 7, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+.xyz-view__actions {
+  clear: left; }
+  /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .xyz-view__actions::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 13, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+.xyz-actions {
+  padding-top: 2em; }
+  /* line 15, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+  .xyz-actions__left {
+    float: left;
+    display: block;
+    margin-right: 16.0363113405%;
+    width: 41.9818443298%; }
+    /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .xyz-actions__left:last-child {
+      margin-right: 0; }
+    /* line 17, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+    .xyz-actions__left a {
+      position: relative;
+      display: inline-block;
+      font-weight: 900;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #272727; }
+      /* line 25, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+      .xyz-actions__left a:after {
+        position: absolute;
+        right: 0em;
+        font-family: "FontAwesome";
+        color: #53af82; }
+  /* line 34, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+  .xyz-actions__right {
+    float: right; }
+    /* line 36, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+    .xyz-actions__right a {
+      position: relative;
+      padding-left: 2em;
+      margin-left: 2em;
+      font-size: 0.875em;
+      text-decoration: none;
+      color: #272727; }
+      /* line 44, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+      .xyz-actions__right a:before {
+        position: absolute;
+        left: 0em;
+        font-size: 1.2857142857em;
+        font-family: "FontAwesome";
+        color: #53af82; }
+  /* line 54, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+  .xyz-actions__360 {
+    padding-right: 1.5em;
+    font-size: 1.125em; }
+    /* line 58, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+    .xyz-actions__360:after {
+      content: "\f01e";
+      top: -0.1em;
+      font-size: 1.3333333333em; }
+  /* line 65, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+  .xyz-actions__fullscreen {
+    margin-left: 3em;
+    padding-right: 2.25em;
+    font-size: 0.75em; }
+    /* line 70, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+    .xyz-actions__fullscreen:after {
+      content: "\f065";
+      top: -0.2em;
+      font-size: 1.75em; }
+  /* line 79, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+  .xyz-actions__share:before {
+    content: "\f1e0"; }
+  /* line 84, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+  .xyz-actions__safe:before {
+    content: "\f115"; }
+  /* line 89, /Users/karlis/mein3d/src/partials/xyz-view/_xyz-view.scss */
+  .xyz-actions__print:before {
+    content: "\f02f"; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/accordion/_accordion.scss */
+.m-accordion {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2); }
+  /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .m-accordion__item::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 10, /Users/karlis/mein3d/src/partials/accordion/_accordion.scss */
+  .m-accordion__item:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-repeat: repeat-x;
+    background-image: url("../images/dots.png"); }
+  /* line 21, /Users/karlis/mein3d/src/partials/accordion/_accordion.scss */
+  .m-accordion__item--open .m-accordion__head:after {
+    content: "\f106"; }
+  /* line 25, /Users/karlis/mein3d/src/partials/accordion/_accordion.scss */
+  .m-accordion__item--open .m-accordion__panel {
+    max-height: 800px; }
+  /* line 30, /Users/karlis/mein3d/src/partials/accordion/_accordion.scss */
+  .m-accordion__head {
+    position: relative;
+    height: 64px;
+    line-height: 64px;
+    cursor: pointer; }
+    /* line 36, /Users/karlis/mein3d/src/partials/accordion/_accordion.scss */
+    .m-accordion__head:after {
+      content: "\f107";
+      position: absolute;
+      right: .5em;
+      font-size: 1.75em;
+      font-family: "FontAwesome";
+      line-height: 64px; }
+  /* line 46, /Users/karlis/mein3d/src/partials/accordion/_accordion.scss */
+  .m-accordion__panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s; }
+    /* line 55, /Users/karlis/mein3d/src/partials/accordion/_accordion.scss */
+    .m-accordion__panel p {
+      margin: 17px 0 21px;
+      font-size: 0.875em; }
+    /* line 59, /Users/karlis/mein3d/src/partials/accordion/_accordion.scss */
+    .m-accordion__panel a {
+      font-weight: 900;
+      color: #272727; }
+    /* line 65, /Users/karlis/mein3d/src/partials/accordion/_accordion.scss */
+    .m-accordion__panel--reproduction .m-radio {
+      float: left;
+      display: block;
+      margin-right: 4.8291579146%;
+      width: 30.1138947236%;
+      margin-bottom: 4.8291579146%; }
+      /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .m-accordion__panel--reproduction .m-radio:last-child {
+        margin-right: 0; }
+      /* line 78, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_omega.scss */
+      .m-accordion__panel--reproduction .m-radio:nth-child(3) {
+        margin-right: 0; }
+    /* line 72, /Users/karlis/mein3d/src/partials/accordion/_accordion.scss */
+    .m-accordion__panel--size .m-radio {
+      float: left;
+      display: block;
+      margin-right: 4.8291579146%;
+      width: 30.1138947236%; }
+      /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .m-accordion__panel--size .m-radio:last-child {
+        margin-right: 0; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/total/_total.scss */
+.m-total {
+  padding-top: 2.5em; }
+  /* line 3, /Users/karlis/mein3d/src/partials/total/_total.scss */
+  .m-total__cost {
+    float: left;
+    display: block;
+    margin-right: 16.0363113405%;
+    width: 41.9818443298%; }
+    /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .m-total__cost:last-child {
+      margin-right: 0; }
+  /* line 6, /Users/karlis/mein3d/src/partials/total/_total.scss */
+  .m-total__button {
+    float: left;
+    display: block;
+    margin-right: 16.0363113405%;
+    width: 41.9818443298%;
+    margin-right: 0; }
+    /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .m-total__button:last-child {
+      margin-right: 0; }
+
+/* line 12, /Users/karlis/mein3d/src/partials/total/_total.scss */
+.m-costs dt, .m-costs dd {
+  font-size: 0.875em;
+  line-height: 1.25em; }
+/* line 16, /Users/karlis/mein3d/src/partials/total/_total.scss */
+.m-costs dt {
+  float: left;
+  display: block;
+  margin-right: 16.0363113405%;
+  width: 41.9818443298%; }
+  /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .m-costs dt:last-child {
+    margin-right: 0; }
+/* line 19, /Users/karlis/mein3d/src/partials/total/_total.scss */
+.m-costs dd {
+  float: left;
+  display: block;
+  margin-right: 16.0363113405%;
+  width: 41.9818443298%;
+  margin-right: 0;
+  text-align: right; }
+  /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .m-costs dd:last-child {
+    margin-right: 0; }
+/* line 24, /Users/karlis/mein3d/src/partials/total/_total.scss */
+.m-costs__strong {
+  margin-top: .5em;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.1428571429em; }
+/* line 31, /Users/karlis/mein3d/src/partials/total/_total.scss */
+.m-costs__figurine, .m-costs__extras, .m-costs__total {
+  font-weight: 900; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/opt-menu/_opt-menu.scss */
+.opt-menu {
+  padding-left: 3.0501207408%; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/form/radio/_radio.scss */
+.m-radio-group {
+  margin-bottom: 21px; }
+  /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .m-radio-group::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 6, /Users/karlis/mein3d/src/partials/form/radio/_radio.scss */
+.m-radio {
+  display: inline-block; }
+  /* line 8, /Users/karlis/mein3d/src/partials/form/radio/_radio.scss */
+  .m-radio__radio {
+    display: none; }
+    /* line 10, /Users/karlis/mein3d/src/partials/form/radio/_radio.scss */
+    .m-radio__radio:checked + label {
+      border-color: black; }
+      /* line 12, /Users/karlis/mein3d/src/partials/form/radio/_radio.scss */
+      .m-radio__radio:checked + label .m-radio__item, .m-radio__radio:checked + label .m-radio__price {
+        color: black; }
+      /* line 15, /Users/karlis/mein3d/src/partials/form/radio/_radio.scss */
+      .m-radio__radio:checked + label:hover {
+        background-color: transparent; }
+  /* line 20, /Users/karlis/mein3d/src/partials/form/radio/_radio.scss */
+  .m-radio__label {
+    display: block;
+    height: 38px;
+    padding: 0 .1em;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #7bc1a0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out; }
+    /* line 30, /Users/karlis/mein3d/src/partials/form/radio/_radio.scss */
+    .m-radio__label:hover {
+      background-color: rgba(0, 0, 0, 0.05); }
+  /* line 34, /Users/karlis/mein3d/src/partials/form/radio/_radio.scss */
+  .m-radio__item, .m-radio__price {
+    color: #7bc1a0;
+    font-size: 0.9375em;
+    font-weight: bold;
+    line-height: 37px; }
+  /* line 46, /Users/karlis/mein3d/src/partials/form/radio/_radio.scss */
+  .m-radio--large .m-radio__label {
+    height: 46px;
+    padding: 0 .5em; }
+  /* line 50, /Users/karlis/mein3d/src/partials/form/radio/_radio.scss */
+  .m-radio--large .m-radio__item, .m-radio--large .m-radio__price {
+    font-weight: 900;
+    line-height: 45px; }
+  /* line 54, /Users/karlis/mein3d/src/partials/form/radio/_radio.scss */
+  .m-radio--large .m-radio__item {
+    font-size: 1.125em; }
+  /* line 57, /Users/karlis/mein3d/src/partials/form/radio/_radio.scss */
+  .m-radio--large .m-radio__price {
+    font-size: 1.3125em; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/form/select/_select.scss */
+.m-select {
+  display: inline-block;
+  height: 37px;
+  min-width: 145px;
+  border: 1px solid #7bc1a0 !important;
+  border-radius: 4px;
+  overflow: hidden;
+  background-image: url(../images/select-arrow.png) !important;;
+  background-position: 98% 14px;
+  background-repeat: no-repeat !important; }
+  /* line 13, /Users/karlis/mein3d/src/partials/form/select/_select.scss */
+  .m-select:hover {
+    background-image: url(../images/select-arrow--hover.png) !important;
+    border-color: #2e3136 !important; }
+    /* line 16, /Users/karlis/mein3d/src/partials/form/select/_select.scss */
+    .m-select:hover select {
+      color: #2e3136 !important; }
+      .address-form .m-select{
+        background-position: right center;
+      }
+  /* line 20, /Users/karlis/mein3d/src/partials/form/select/_select.scss */
+  .m-select select {
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 22px;
+    font-size: 14px;
+    line-height: 1;
+    color: #7bc1a0; }
+  /* line 38, /Users/karlis/mein3d/src/partials/form/select/_select.scss */
+  .m-select + .m-input, .m-select + .m-select, .m-select + .btn {
+    margin-left: 8px; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/form/input/_input.scss */
+.m-input {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 37px;
+  width: 145px;
+  font-size: 14px;
+  border: 1px solid #7bc1a0;
+  border-radius: 4px;
+  padding: 0 8px;
+  color: #7bc1a0; }
+  /* line 13, /Users/karlis/mein3d/src/partials/form/input/_input.scss */
+  .m-input--purple {
+    border: 1px solid #7b68ac !important;
+    color: #7b68ac; }
+    .m-input--green {
+    border: 1px solid #7bc1a0 !important;
+    color: #7bc1a0; }
+  /* line 17, /Users/karlis/mein3d/src/partials/form/input/_input.scss */
+  .m-input + .m-input, .m-input + .m-select, .m-input + .btn {
+    margin-left: 8px; }
+
+/* line 4, /Users/karlis/mein3d/src/partials/form/radio-block/_radio-block.scss */
+.radio-block__radio:checked + label + .radio-block__content {
+  display: block; }
+/* line 8, /Users/karlis/mein3d/src/partials/form/radio-block/_radio-block.scss */
+.radio-block__label {
+  font-size: 1.125em;
+  margin-bottom: 1em; }
+/* line 13, /Users/karlis/mein3d/src/partials/form/radio-block/_radio-block.scss */
+.radio-block__row {
+  margin: .2em 0; }
+  /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .radio-block__row::after {
+    clear: both;
+    content: "";
+    display: table; }
+/* line 17, /Users/karlis/mein3d/src/partials/form/radio-block/_radio-block.scss */
+.radio-block__content {
+  margin-top: .7em;
+  display: block; }
+/* line 23, /Users/karlis/mein3d/src/partials/form/radio-block/_radio-block.scss */
+.radio-block__blabel {
+  font-size: 1.125em;
+  line-height: 37px; }
+  @media screen and (min-width: 40.0625em)  {
+    .radio-block__blabel {
+      float: left;
+      display: block;
+      margin-right: 0.578664%;
+      width: 33.263335%;
+      text-align: right;
+    }
+      /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .radio-block__blabel:last-child {
+        margin-right: 0; } }
+/* line 36, /Users/karlis/mein3d/src/partials/form/radio-block/_radio-block.scss */
+
+.radio-block__input .ui-message-error .ui-message-error-detail{
+  line-height: 1.9;
+}
+.radio-block__input {
+    display: block;
+    width: 100%; }
+    .radio-block__input .m-input, .radio-block__input .m-select {
+  width: 100% !important;
+}
+.radio-block__input .ui-message-error {
+  width: 100%;
+  display: inline-block;
+  height: 37px;
+  vertical-align: top;
+  margin: 0;
+  text-align: right;
+}
+@media screen and (min-width: 40.0625em)  {
+  .radio-block__input .ui-message-error {
+  	/*width: 35%; 
+    margin: 0px 5px;*/
+    width:100%;
+    text-align: left;
+}
+  .radio-block__input {
+    float: left;
+    display: block;
+    margin-right: 3.5786636068%;
+    /*width: 38.158001%;*/
+    max-width: 348px; }
+    /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .radio-block__input:last-child {
+      margin-right: 0; } }
+/* line 47, /Users/karlis/mein3d/src/partials/form/radio-block/_radio-block.scss */
+.radio-block__column {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%; }
+  /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .radio-block__column:last-child {
+    margin-right: 0; }
+@media screen and (min-width: 40.0625em)  {
+  .plusminusbutton{
+  top: 7px !important;
+}
+
+  .radio-block {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 98.880783%; }
+    /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+    .radio-block:last-child {
+      margin-right: 0; } }
+/* line 60, /Users/karlis/mein3d/src/partials/form/radio-block/_radio-block.scss */
+.radio-block + .radio-block {
+  margin-top: 1em; }
+
+/* line 4, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+.co-table-container {
+  position: relative;
+  margin: 1em 0; }
+  /* line 8, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+  .co-table-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 31px;
+    background-color: #7bc1a0;
+    background-image: url(../images/table-top.png);
+    background-repeat: repeat-x;
+    border-radius: 8px 8px 0 0; }
+
+/* line 22, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+.co-table {
+  position: relative;
+  width: 100%; }
+  /* line 25, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+  .co-table tr {
+    border-bottom: 1px solid #7bc1a0; }
+    @media screen and (min-width: 17.5em)  {
+       .btn--purple {
+  top: 0;
+}
+      thead{
+        display: none;
+      }
+      .co-table-container:before {
+        display:none;
+      }
+
+      .co-table tr {
+        display: block;
+        padding: .8em 0; }
+        /* line 31, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+        .co-table tr:first-child {
+          display: block; }
+        /* line 34, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+        .co-table tr:nth-child(even) {
+          background-color: white;
+          color: #2e3136;
+          border-color: transparent; }
+        /* line 38, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+        .co-table tr:nth-child(odd) {
+          background-color: #7bc1a0;
+          color: white; } 
+          .co-table tr:nth-child(odd) .co-table__price-wrapper {
+  color: rgba(255, 255, 255, 0.51);
+}}
+    @media screen and (min-width: 40.0625em)  {
+      .btn--purple {
+  top: -3px;
+}
+      .co-table tr:nth-child(odd) .co-table__price-wrapper {
+  color: #7bc1a0;
+}
+      thead{
+        display: table-header-group;
+      }
+      .co-table-container:before {
+        display:block;
+      }
+
+      .co-table tr {
+        display: table-row;
+        padding: 0; }
+        /* line 49, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+        .co-table tr:first-child {
+          display: table-row; }
+        /* line 52, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+        .co-table tr:nth-child(even) {
+          background-color: transparent;
+          color: #272727; }
+        /* line 56, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+        .co-table tr:nth-child(odd) {
+          background-color: transparent;
+          color: #272727; } }
+  /* line 62, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+  .co-table th, .co-table td {
+    text-align: center;
+    vertical-align: middle; }
+  /* line 67, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+  .co-table th {
+    height: 31px;
+    font-size: 1em;
+    color: white; }
+    /* line 74, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+    .co-table th:first-child {
+      border-radius: 8px 0 0 0;
+      border-left: 1px solid transparent; }
+    /* line 78, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+    .co-table th:last-child {
+      border-radius: 0 8px 0 0;
+      border-right: 1px solid transparent; }
+    @media screen and (min-width: 17.5em)  {
+      .plusminusbutton{
+  top: 2px;
+}
+
+      .co-table th {
+        display: none; } }
+    @media screen and (min-width: 40.0625em)  {
+      .co-table tr:nth-child(even) {
+          background-color: white;
+          color: #2e3136;
+          border-color: #7bc1a0; }
+      .co-table th {
+        display: table-cell; } }
+  /* line 91, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+  .co-table td {
+    position: relative;
+    font-weight: 900; }
+    /* line 96, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+    .co-table td:before {
+      content: attr(data-th);
+      position: absolute;
+      left: .5em; }
+    @media screen and (min-width: 17.5em)  {
+      .co-table td {
+        display: block;
+        padding-left: 47%;
+        padding-top: .2em;
+        padding-bottom: .2em; }
+        /* line 107, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+        .co-table td:before {
+          display: block; } }
+    @media screen and (min-width: 40.0625em)  {
+      .co-table td {
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        display: table-cell;
+        height: 115px;
+        font-size: 1.5em;
+         }
+        /* line 121, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+        .co-table td:first-child {
+          border-left: 1px solid #7bc1a0; }
+        /* line 124, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+        .co-table td:last-child {
+          border-right: 1px solid #7bc1a0; }
+        /* line 127, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+        .co-table td:before {
+          display: none; } }
+    @media screen and (min-width: 40.0625em)  {
+      .co-table td + td {
+        border-left: 1px solid rgba(0, 0, 0, 0.3); } }
+  /* line 152, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+  .co-table__product {
+    font-weight: 400;
+    font-size: 0.9166666667em; }
+  /* line 159, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+  .co-table__price-wrapper {
+    color: #7bc1a0; }
+  /* line 168, /Users/karlis/mein3d/src/partials/co-table/_co-table.scss */
+  .co-table__image {
+    max-width: 100%;
+    margin-top: 0.5em; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/co-tabs/_co-tabs.scss */
+.co-tabs {
+  margin-top: 25px;
+  margin-bottom: 23px; }
+  /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .co-tabs::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 17.5em)  {
+    .co-tabs__item {
+      height: 43px;
+      line-height: 48px; }
+      /* line 9, /Users/karlis/mein3d/src/partials/co-tabs/_co-tabs.scss */
+      .co-tabs__item .co-tabs__link {
+        text-align: center; } }
+  @media screen and (min-width: 30.0625em)  {
+    .co-tabs__item {
+      float: left;
+      display: block;
+      margin-right: 4.8291579146%;
+      width: 47.5854210427%;
+      text-align: center; }
+      /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .co-tabs__item:last-child {
+        margin-right: 0; }
+      /* line 78, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_omega.scss */
+      .co-tabs__item:nth-child(2n) {
+        margin-right: 0; }
+      /* line 83, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_omega.scss */
+      .co-tabs__item:nth-child(2n+1) {
+        clear: left; } }
+  @media screen and (min-width: 40.0625em)  {
+    .co-tabs__item {
+      height: auto;
+      line-height: normal;
+      float: left;
+      display: block;
+      margin-right: 3.5786636068%;
+      width: 22.3160022949%; }
+      /* line 17, /Users/karlis/mein3d/scss/_mixins.scss */
+      .co-tabs__item:nth-child(2n) {
+        margin-right: 2.3576515979%; }
+      /* line 18, /Users/karlis/mein3d/scss/_mixins.scss */
+      .co-tabs__item:nth-child(2n+1) {
+        clear: none; }
+      /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .co-tabs__item:last-child {
+        margin-right: 0; }
+      /* line 25, /Users/karlis/mein3d/src/partials/co-tabs/_co-tabs.scss */
+      .co-tabs__item .co-tabs__link {
+        text-align: left; } }
+  /* line 30, /Users/karlis/mein3d/src/partials/co-tabs/_co-tabs.scss */
+  .co-tabs__item--active .co-tabs__link {
+    color: #272727; }
+    /* line 32, /Users/karlis/mein3d/src/partials/co-tabs/_co-tabs.scss */
+    .co-tabs__item--active .co-tabs__link:before {
+      background-color: #7bc1a0;
+      color: white; }
+  /* line 41, /Users/karlis/mein3d/src/partials/co-tabs/_co-tabs.scss */
+  .co-tabs__item:nth-child(1) .co-tabs__link:before {
+    content: "1"; }
+  /* line 41, /Users/karlis/mein3d/src/partials/co-tabs/_co-tabs.scss */
+  .co-tabs__item:nth-child(2) .co-tabs__link:before {
+    content: "2"; }
+  /* line 41, /Users/karlis/mein3d/src/partials/co-tabs/_co-tabs.scss */
+  .co-tabs__item:nth-child(3) .co-tabs__link:before {
+    content: "3"; }
+  /* line 41, /Users/karlis/mein3d/src/partials/co-tabs/_co-tabs.scss */
+  .co-tabs__item:nth-child(4) .co-tabs__link:before {
+    content: "4"; }
+  /* line 48, /Users/karlis/mein3d/src/partials/co-tabs/_co-tabs.scss */
+  .co-tabs__link {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    position: relative;
+    display: block;
+    height: 40px;
+    padding-left: 56px;
+    text-decoration: none;
+    line-height: 37px;
+    font-size: 1.125em;
+    color: #7bc1a0; }
+    /* line 60, /Users/karlis/mein3d/src/partials/co-tabs/_co-tabs.scss */
+    .co-tabs__link:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #7bc1a0;
+      border-radius: 3px;
+      text-align: center;
+      line-height: 37px;
+      font-weight: 900; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/co-footer/_co-footer.scss */
+.co-footer {
+  margin-bottom: 1.5em; }
+  /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .co-footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 17.5em)  {
+    .co-footer .button-container {
+      float: left;
+      display: block;
+      margin-right: 7.4229703521%;
+      width: 46.288514824%; }
+      /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .co-footer .button-container:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 40.0625em)  {
+    .co-footer .button-container {
+      float: left;
+      display: block;
+      margin-right: 16.0363113405%;
+      width: 41.9818443298%; }
+      /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .co-footer .button-container:last-child {
+        margin-right: 0; } }
+  /* line 12, /Users/karlis/mein3d/src/partials/co-footer/_co-footer.scss */
+  .co-footer .button-container--right {
+    float: right; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/co-info/_co-info.scss */
+.co-info {
+  margin-bottom: 1em; 
+margin-top: 2em;
+}
+  /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .co-info::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 5, /Users/karlis/mein3d/src/partials/co-info/_co-info.scss */
+  .co-info__column p,
+    .co-info__column pre {
+    font-size: 0.875em;
+    line-height: 1.2857142857em;
+    color: #2e3136; }
+  @media screen and (min-width: 17.5em)  {
+    /* line 12, /Users/karlis/mein3d/src/partials/co-info/_co-info.scss */
+    .co-info__column + .co-info__column {
+      margin-top: 1em; } }
+  @media screen and (min-width: 40.0625em)  {
+    .co-info__column {
+      float: left;
+      display: block;
+      margin-right: 10.1483979942%;
+      width: 26.5677346705%; }
+      /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .co-info__column:last-child {
+        margin-right: 0; }
+      /* line 19, /Users/karlis/mein3d/src/partials/co-info/_co-info.scss */
+      .co-info__column + .co-info__column {
+        margin-top: 0em; } }
+  /* line 24, /Users/karlis/mein3d/src/partials/co-info/_co-info.scss */
+  .co-info__title {
+    margin-bottom: .4em;
+    font-size: 1em;
+    font-weight: 900; }
+  /* line 32, /Users/karlis/mein3d/src/partials/co-info/_co-info.scss */
+  .co-info .icon-visa:before {
+    position: relative;
+    top: .2em;
+    content: url('../images/visa.png');
+    display: inline-block;
+    margin-right: .2em; }
+
+/* line 1, /Users/karlis/mein3d/src/partials/co-total/_co-total.scss */
+.co-total {
+  margin-bottom: 1.5em; }
+  /* line 3, /Users/karlis/mein3d/src/partials/co-total/_co-total.scss */
+  .co-total__row {
+    position: relative;
+    margin-top: .2em;
+    line-height: 1.2em; }
+    /* line 7, /Users/karlis/mein3d/src/partials/co-total/_co-total.scss */
+    .co-total__row--strong {
+      margin-top: 1em; }
+      /* line 9, /Users/karlis/mein3d/src/partials/co-total/_co-total.scss */
+      .co-total__row--strong div {
+        font-weight: 900;
+        font-size: 1em !important; }
+  /* line 15, /Users/karlis/mein3d/src/partials/co-total/_co-total.scss */
+  .co-total__right, .co-total__left {
+    text-align: right;
+    font-size: 0.875em !important;
+    color: #2e3136; }
+    /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+    .co-total__right::after, .co-total__left::after {
+      clear: both;
+      content: "";
+      display: table; }
+  /* line 21, /Users/karlis/mein3d/src/partials/co-total/_co-total.scss */
+  .co-total__right {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  /* line 26, /Users/karlis/mein3d/src/partials/co-total/_co-total.scss */
+  .co-total__left {
+    box-sizing: border-box;
+    padding-right: 100px;
+    width: 100%; }
+    /* line 31, /Users/karlis/mein3d/src/partials/co-total/_co-total.scss */
+    .co-total__left .m-input, .co-total__left .m-select, .co-total__left .btn {
+      margin-left: 8px; }
+
+/* line 45, /Users/karlis/mein3d/src/partials/co-total/_co-total.scss */
+.lh-fix {
+  position: relative; }
+  @media screen and (min-width: 40.0625em)  {
+    .lh-fix {
+      top: -11px; } }
+
+/* line 1, /Users/karlis/mein3d/src/partials/co-address/_co-address.scss */
+.co-address {
+  position: relative;
+  margin: 0 0 3.5em;
+  padding: .7em 1em;
+  border: 1px solid #7bc1a0;
+  border-radius: 4px; }
+  /* line 8, /Users/karlis/mein3d/src/partials/co-address/_co-address.scss */
+  .co-address__row {
+    position: relative;
+    margin: 0.3em 0; }
+    /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+    .co-address__row::after {
+      clear: both;
+      content: "";
+      display: table; }
+    /* line 13, /Users/karlis/mein3d/src/partials/co-address/_co-address.scss */
+    .co-address__row--error .co-address__error {
+      display: block; }
+  /* line 18, /Users/karlis/mein3d/src/partials/co-address/_co-address.scss */
+  .co-address__label {
+    font-size: 1.125em;
+    font-weight: bold;
+    color: #2e3136;
+    line-height: 36px; }
+    @media screen and (min-width: 40.0625em)  {
+      .co-address__label {
+        float: left;
+        display: block;
+        margin-right: 3.5786636068%;
+        width: 61.1580011475%;
+        text-align: right; }
+        /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+        .co-address__label:last-child {
+          margin-right: 0; } }
+  /* line 34, /Users/karlis/mein3d/src/partials/co-address/_co-address.scss */
+  .co-address__input .m-select, .co-address__input .m-input {
+    width: 100%;
+    min-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    padding: 0 3%;
+    font-size: 19px;
+    font-size: 14px !important;
+    color: #7bc1a0; 
+  }
+  @media screen and (min-width: 40.0625em)  {
+    .co-address__input {
+      float: left;
+      display: block;
+      margin-right: 3.5786636068%;
+      width: 35.2633352458%;
+      margin-right: 0; }
+      /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .co-address__input:last-child {
+        margin-right: 0; } }
+  /* line 47, /Users/karlis/mein3d/src/partials/co-address/_co-address.scss */
+  .co-address__error {
+    font-size: 0.875em;
+    font-weight: 900;
+    color: #f95355;
+    line-height: 36px; }
+    .radio-block__input .ui-message-error,
+    .co-address__error .ui-message-error{
+      background: transparent;
+      border-color: transparent;
+      color: #f95355;
+      font-weight: 900;
+      line-height: 36px;
+    }
+    .radio-block__input .ui-message-error{
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 17.5em)  {
+      .co-address__error {
+        text-align: right; } }
+    @media screen and (min-width: 40.0625em)  {
+      .co-address__error {
+        left: 108%;
+        position: absolute;
+        text-align: left;
+        width: 100%; } }
+  @media screen and (min-width: 40.0625em)  {
+    .co-address {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 74.4105871005%; }
+      /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .co-address:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 54.375em)  {
+    .co-address {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 48.821174201%; }
+      /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+      .co-address:last-child {
+        margin-right: 0; } }
+
+/* line 76, /Users/karlis/mein3d/src/partials/co-address/_co-address.scss */
+.address-note {
+  bottom: -1.5em;
+  left: 0;
+  width: 100%;
+  clear: left; }
+  /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+  .address-note::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 86, /Users/karlis/mein3d/src/partials/co-address/_co-address.scss */
+  .address-note__note {
+    float: right; }
+  @media screen and (min-width: 40.0625em)  {
+    .address-note {
+      position: absolute; } }
+
+/* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.page--configurator .main__content::after {
+  clear: both;
+  content: "";
+  display: table; }
+/* line 9, /Users/karlis/mein3d/src/pages/_configurator.scss */
+.page--configurator .main__xyz {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 57.3509785009%; }
+  /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .page--configurator .main__xyz:last-child {
+    margin-right: 0; }
+/* line 12, /Users/karlis/mein3d/src/pages/_configurator.scss */
+.page--configurator .main__opt {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 40.2913699012%; }
+  /* line 89, node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .page--configurator .main__opt:last-child {
+    margin-right: 0; }
+
+/* line 6, /Users/karlis/mein3d/src/pages/_checkout.scss */
+.info .main__description,
+.page--checkout .main__description {
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  line-height: 1.2em;
+  color: #2e3136; }
+/* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+.page--checkout .main__content::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+@media screen and (min-width: 17.5em)  {
+  .page {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+    /* line 20, /Users/karlis/mein3d/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/addons/_clearfix.scss */
+    .page::after {
+      clear: both;
+      content: "";
+      display: table; } }
+@media screen and (min-width: 62.5em)  {
+  .page {
+    max-width: 960px; } }
+
+.m-header__user:last-child {
+  float:right;
+  line-height: 0.5;
+}
+.ui-radiobutton {
+  margin-right: 8px;
+}
+.creditcard{
+  float:left;
+  margin: 10px;
+  margin-left: 0;
+}
+.user__logout, .user__cart {
+  float: right;
+}
+.user__cart:before {
+  line-height: 0.9;
+}
+.user__cart-items {
+  bottom: 0.9em;
+}
+.m-footer__copyrights {
+  width: auto;
+  float: right;
+}
+
+.m-footer__navigation {
+  width: auto;
+  display: block;
+  text-align: center;
+  font-size: 0.8125em;
+  line-height: 75px;
+  float: left;
+}
+
+.m-footer__navigation a{
+  color: black;
+  padding-right: 2em;
+  text-decoration: none;
+}
+
+.m-footer__bottom {
+  margin-top: 3em;
+}
+.ui-column-title{
+  color: white;
+  position: relative;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-size: 0.625em !important;
+  font-family: 'Lato', sans-serif !important;
+padding:0;
+}
+@media screen and (max-width: 652px)  {
+  .m-footer__navigation,
+  .m-footer__copyrights{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .m-footer__navigation a{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    vertical-align: middle;
+    line-height: 1.5;
+  }
+}
+.info a,
+.info a:hover,
+.info a:active{
+  color:#7bc1a0;
+}
+.info .main__description{
+  line-height: 1.5 !important;
+}
+.info h4{
+  margin: 0.6em 0;
+  font-size: 1.2em;
+  font-weight: 900;
+  line-height: 1.5;
+}
+.info p{
+  margin-bottom: 1.8em;
+  line-height: 1.5;
+}
+.info ol{
+  list-style: inherit;
+  padding-left: 1.5em;
+  list-style-type: decimal;
+}
+.info ul{
+  list-style: inherit;
+  padding-left: 1.5em;
+  list-style-type: circle;
+}
+.info ol li{
+  margin-bottom: 1.8em;
+  line-height: 1.5;
+}
+.info ul li{
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+.info .numbered{
+  list-style-type: decimal;
+}
