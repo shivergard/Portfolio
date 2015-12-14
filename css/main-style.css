@@ -9,6 +9,7 @@ background-image:url(../img/patterns/bg.png);
 header {
 background: #444444;
 margin-bottom: 8px;
+height: 100px;
 }
 
 footer{
@@ -25,74 +26,9 @@ section{
 }
 
 .top{
-
-    margin-top: 1.5em;
-
+    margin-top: 4.5em;
     height: 590px;
-
 }
-
-.thumb, .thumb2 {
-
-    float:left;
-
-    overflow: hidden;
-
-    padding: 10px;
-
-    text-align: left;
-
-    box-sizing:border-box;
-
-    border: 1px solid rgba(128, 128, 128, 0.59);
-
-    margin:1%;
-
-}
-
-.thumb img, .thumb2 img{
-
-width: 100%;
-
-}
-
-.thumb{
-
-    width: 23%;
-
-}
-
-.thumb2 {
-
-width: 48%;
-
-}
-
-.thumb2 h5,.thumb h5{
-
-margin: 0;
-
-font-size: 40px;
-
-text-transform: uppercase;
-
-}
-
-.thumb2 a, .thumb a{
-
-    color: rgb(174, 0, 0);
-
-    font-size: 14px;
-
-    text-decoration: none;
-
-}
-.thumb a:hover{
-
-    text-decoration: underline;
-
-}
-
 .nogrieznis{
 
 display:inline-block;
