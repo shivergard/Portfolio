@@ -7,7 +7,7 @@ background-image:url(../img/patterns/bg.png);
 }
 
 header {
-background: #444444;
+background: #2B2B2B;
 margin-bottom: 8px;
 height: 100px;
 }
@@ -969,16 +969,10 @@ background: url(../img/bg-line.png) no-repeat center center;
 }
 
 .lobsterheading{
-
     font-family: lobster;
-
-font-size: 36px;
-
-text-align: left;
-
-max-width: 1102px;
-
-margin: 0 auto;
+    font-size: 36px;
+    max-width: 1102px;
+    margin: 0 auto;
 
 }
 
