@@ -1,133 +1,123 @@
 body{
-font-family: Open-Sans ,sans-serif;
-background: #FCFAF9;
-color: #515657;
-margin: 0;
-background-image:url(../img/patterns/bg.png);
+    font-family: Open-Sans ,sans-serif;
+    background: #FCFAF9;
+    color: #515657;
+    margin: 0;
+    background-image:url(../img/patterns/bg.png);
 }
 
 header {
-background: #2B2B2B;
-margin-bottom: 8px;
-height: 100px;
+    background: #2B2B2B;
+    margin-bottom: 8px;
+    height: 95px;
 }
 
 footer{
-width:100%;
-background:rgb(98, 98, 98);
-color:white;
-margin-top:60px;
-padding-top: 30px;
-height: 140px;
+    width:100%;
+    background: #2B2B2B;
+    color:white;
+    margin-top:60px;
+    height: 140px;
+}
+footer a{
+    color: #EAEAEA;
+    text-decoration: none;
+    padding: 10px;
+}
+footer nav{
+    border: none;
+    padding-top: 30px;
+    text-transform: uppercase;
 }
 .img-responsive{
     width: 100%;
     height: auto;
 }
+.img-border{
+    border: 1px solid #B5B5B5;
+    padding: 5px;
+    box-sizing: border-box;
+}
+article a{
+    text-decoration: none;
+    color: rgb(174, 0, 0);
+}
+article a:hover,
+article a:active{
+    text-decoration: underline;
+}
 .top{
-    margin-top: 4.5em;
-    height: 650px;
+    margin-top: 43px;
+    height: 590px;
 }
 
-nav a {
-
-color: #DADADA;
-text-decoration: none;
-padding: 3px 10px;
-position: relative;
-bottom: 52px;
-font-size: 16px;
-font-weight: 200;
-text-transform: uppercase;
+header nav a {
+    color: #DADADA;
+    text-decoration: none;
+    padding: 3px 10px;
+    position: relative;
+    bottom: 45px;
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 .to-top{
-
     display: inline-block;
-
-margin-left: 20px;
-
-background: gray;
-
-width: 30px;
-
-height: 30px;
-
-vertical-align: middle;
-
-border-radius: 50%;
-
-overflow: hidden;
-
+    margin-left: 20px;
+    background: gray;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .to-top:hover{
-
     background:#C33F3F
-
 }
 
 .to-top i{
     position: relative;
-top: -10px;
-left: 1px;
-color: white;
+    top: -10px;
+    left: 1px;
+    color: white;
 }
 
 .button{
-
-background: #C33F3F;
-
-border-bottom: 3px solid #802121;
-
-color: #fff;
-
-text-decoration: none;
-
-padding: 10px 20px;
-
-margin: 15px;
-
-display: inline-block;
-
-/* font-family: lobster; */
-
-font-size: 20px;
-
-text-transform: uppercase;
-
-border-radius: 6px;
-
+    background: #C33F3F;
+    border-bottom: 3px solid #802121;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 15px;
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
 }
-
 
 .button:hover{
-
     background: #A11A1A;
-
     border-bottom: 3px solid #731414;
-
 }
-
 
 .portrait div{
     position: absolute;
-font-family: sketch;
-
-font-size: 55px;
-
-color: #D5D5D5;
-
-padding: 19px 16px;
-
+    font-family: sketch;
+    font-size: 55px;
+    color: #D5D5D5;
+    padding: 19px 16px;
 }
 
 nav {
-	color: #B9B9B9;
-	margin:0 auto;
-	padding: 19px;
+    color: #B9B9B9;
+    margin: 0 auto;
     text-align: center;
     font-family: sans-serif;
+    border-top: 1px solid #191919;
+    position: relative;
+    top: 9px;
 }
 
 .cf:before,
@@ -151,7 +141,6 @@ h1{
     font-size: 5em;
     line-height: 1.5;
     margin: 0;
-    margin-top: 80px;
 }
 
 p{
@@ -161,16 +150,15 @@ p{
 }
 
 section{
-    max-width: 660px;
-    margin: 0 auto; 
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 10px;
+    padding-bottom: 50px;
 }
 
 main{
-
     text-align: center;
-
     border-top: 1px solid rgba(128, 128, 128, 0.54);
-
 }
 
 .top-image{
@@ -179,9 +167,8 @@ main{
     margin:0 auto;
     background:url(../img/bg.png) no-repeat;
     position:absolute;background-position: center center;
-    top: -2px;
     z-index: -9;
-    top: 156px;
+    top: 98px;
 }
 
 .portrait{
@@ -190,16 +177,6 @@ main{
     width: 100px;
     border-radius:50%;
     background:rgb(73, 73, 73);
-}
-
-@font-face {
-    font-family: sketch;
-    src: url(../fonts/Sketch_Block.ttf);
-}
-
-@font-face {
-    font-family: mari-bold;
-    src: url(../fonts/MARI&DAVID-BOLD.ttf);
 }
 
 @font-face {
@@ -225,12 +202,11 @@ main{
     position: relative;
     cursor: default;
     margin: 0 auto;
+    background-color: #151515;
 }
-
 
 section h2{
     font-family: lobster;
     font-size: 36px;
     margin: 40px auto;
-
 }
