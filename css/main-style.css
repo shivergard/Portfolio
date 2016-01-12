@@ -61,6 +61,7 @@ article a:active{
     border-radius: 5px;
     color: white;
 }
+
 header nav a {
     color: #DADADA;
     text-decoration: none;
@@ -168,6 +169,7 @@ section{
 }
 
 main{
+    text-align: center;
     border-top: 1px solid rgba(128, 128, 128, 0.54);
 }
 
