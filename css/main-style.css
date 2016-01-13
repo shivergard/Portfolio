@@ -32,6 +32,14 @@ footer nav{
 h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
+ul{
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
 .img-responsive{
     width: 100%;
     height: auto;
@@ -162,6 +170,17 @@ p{
 }
 li{
     line-height: 1.5;
+}
+li:before{
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f111";
+    font-size: 8px;
+    padding: 5px 7px 5px 0;
+    vertical-align: top;
 }
 section{
     max-width: 680px;
