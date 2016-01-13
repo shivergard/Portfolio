@@ -1,5 +1,5 @@
 body{
-    font-family: Open-Sans ,sans-serif;
+    font-family: 'Arimo', sans-serif;
     background: #FCFAF9;
     color: #515657;
     margin: 0;
@@ -148,7 +148,7 @@ nav {
 }
 
 h1{
-   font-family: lobster;
+    font-family: 'Lobster', cursive;
     font-size: 5em;
     line-height: 1.5;
     margin: 0;
@@ -156,11 +156,13 @@ h1{
 
 p{
     font-size: 17px;
-    line-height: 1.5;
+    line-height: 1.7;
     text-align: justify;
     clear: both;
 }
-
+li{
+    line-height: 1.5;
+}
 section{
     max-width: 680px;
     margin: 0 auto;
@@ -169,7 +171,6 @@ section{
 }
 
 main{
-    text-align: center;
     border-top: 1px solid rgba(128, 128, 128, 0.54);
 }
 
@@ -191,22 +192,6 @@ main{
     background:rgb(73, 73, 73);
 }
 
-@font-face {
-    font-family: lobster;
-    src: url(../fonts/Lobster.otf);
-}
-
-@font-face {
-    font-family: Dosis;
-    src: url(../fonts/Dosis-Regular.otf);
-}
-
-@font-face {
-    font-family: Open-Sans;
-    src: url(../fonts/OpenSans-Regular.ttf);
-}
-
-
 .ch-item {
     width: 100px;
     height: 100px;
@@ -218,7 +203,7 @@ main{
 }
 
 section h2{
-    font-family: lobster;
+    font-family: 'Lobster', cursive;
     font-size: 36px;
     margin: 40px auto;
 }
